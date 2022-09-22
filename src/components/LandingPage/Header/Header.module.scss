@@ -1,0 +1,85 @@
+$banner-color: #e6e1e1;
+$margin: 0.5rem 0;
+
+.banner {
+  background-color: $banner-color;
+  text-align: center;
+  padding: 1rem;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 3rem;
+  justify-content: space-between;
+  background-color: #f2ebeb;
+  align-items: center;
+
+  .logo {
+    max-width: 40%;
+    cursor: pointer;
+  }
+
+  input {
+    width: 15rem;
+    background: #efe8e8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    margin: $margin;
+    padding: 0.5rem;
+  }
+
+  a {
+    color: black;
+    margin: $margin;
+  }
+
+  .cart {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+  }
+
+  span {
+    background-color: rgb(63, 32, 32);
+    border-radius: 50%;
+    padding: 5px;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    z-index: 1000;
+    bottom: 1rem;
+    right: 0.3rem;
+    cursor: pointer;
+  }
+}
+
+@media all and (min-width: 700px) {
+  .nav {
+    flex-direction: row;
+
+    .logo {
+      max-width: 20%;
+    }
+
+    input {
+      width: 40%;
+      margin: 0 1rem;
+    }
+
+    a {
+      margin: 0 1rem;
+    }
+    .cart {
+      width: 3rem;
+      height: 3rem;
+    }
+
+    span {
+      bottom: 2rem;
+      right: 1rem;
+    }
+  }
+}

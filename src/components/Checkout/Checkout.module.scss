@@ -1,0 +1,10 @@
+@import "../Cart/Cart.module.scss";
+
+.checkout {
+  @include footer-style;
+
+  section {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

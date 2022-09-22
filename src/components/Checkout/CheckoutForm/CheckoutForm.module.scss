@@ -1,0 +1,72 @@
+@import "../../Cart/CartProducts/CartProducts.module.scss";
+
+@mixin flexSetup {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+@mixin checkoutCard {
+  max-width: 45rem;
+  width: 90%;
+  background-color: #c4c4c4;
+  margin: 1rem auto 5rem auto;
+}
+
+.checkoutCard {
+  @include checkoutCard;
+  @include flexSetup;
+
+  h3 {
+    text-align: center;
+  }
+
+  form {
+    margin: 1rem;
+    section {
+      @include flexSetup;
+      flex-direction: row;
+      margin: -1rem;
+
+      div {
+        @include flexSetup;
+        margin: 1rem;
+        flex: 20%;
+
+        label {
+          margin: 0.5rem;
+        }
+
+        span {
+          color: rgb(143, 53, 53);
+        }
+        input,
+        select {
+          margin: 0.4rem;
+          border: none;
+          border-radius: 0.2rem;
+          box-shadow: 2px 2px gray;
+          padding: 0.8rem;
+          background-color: #d8d2d2;
+        }
+      }
+    }
+
+    button {
+      @include removeButtonStyle;
+      background-color: rgb(68, 68, 200);
+      padding: 1rem;
+      float: right;
+    }
+  }
+}
+
+@media all and (min-width: 700px) {
+  form {
+    section {
+      div {
+        flex: 25%;
+      }
+    }
+  }
+}

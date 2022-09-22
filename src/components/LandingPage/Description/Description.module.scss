@@ -1,0 +1,28 @@
+.imageStore {
+  img {
+    max-width: 100%;
+  }
+
+  .optionalImg {
+    display: none;
+  }
+}
+.details {
+  padding: 1rem 3rem;
+}
+
+@media all and (min-width: 700px) {
+  .imageStore {
+    text-align: center;
+    img {
+      max-width: 45%;
+      margin: 1rem;
+    }
+    .optionalImg {
+      display: inline-block;
+    }
+  }
+  .details {
+    padding: 1rem 7rem;
+  }
+}

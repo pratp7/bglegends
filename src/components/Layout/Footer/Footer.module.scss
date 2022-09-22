@@ -1,0 +1,58 @@
+$padding: 1rem;
+$backgroundColor: #948585;
+$align: center;
+
+.contactDiv {
+  background-color: $backgroundColor;
+  padding: 1rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  h3 {
+    flex: 0 0 100%;
+    text-align: $align;
+  }
+
+  h4 {
+    text-align: $align;
+  }
+
+  img {
+    max-width: 3rem;
+  }
+  a {
+    color: #0060b6;
+    text-decoration: none;
+
+    &:hover {
+      color: #00a0c6;
+      cursor: pointer;
+    }
+  }
+}
+
+.contact div {
+  display: flex;
+  align-items: $align;
+}
+
+.social {
+  img:hover {
+    cursor: pointer;
+  }
+}
+
+.copyRight {
+  padding: $padding;
+  background-color: #333030;
+  color: white;
+  text-align: $align;
+}
+
+@media all and (min-width: 700px) {
+  .contactDiv {
+    padding: 0.5rem 1rem;
+    justify-content: space-around;
+  }
+}

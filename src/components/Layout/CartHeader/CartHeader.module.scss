@@ -1,0 +1,39 @@
+$banner-color: #e6e1e1;
+$margin: 0.5rem 0;
+
+.banner {
+  background-color: $banner-color;
+  text-align: center;
+  padding: 1rem;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 3rem;
+  justify-content: space-between;
+  background-color: #f2ebeb;
+  align-items: center;
+
+  .logo {
+    max-width: 10rem;
+    cursor: pointer;
+  }
+  a {
+    color: black;
+    margin: $margin;
+  }
+}
+
+@media all and (min-width: 700px) {
+  .nav {
+    flex-direction: row;
+
+    .logo {
+      max-width: 10rem;
+    }
+    a {
+      margin: 0 1rem;
+    }
+  }
+}
